@@ -12,19 +12,12 @@
 	<artifactId>javascriptplus-for-vaadin</artifactId>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.8</java.version>
-		<vaadin.version>7.5.2</vaadin.version>
-		<spring-boot.version>1.2.1.RELEASE</spring-boot.version>
-		<gson.version>2.2.4</gson.version>
-
 		<implementation.version>${project.version}</implementation.version>
 		<implementation.title>JavaScriptPlus for Vaadin</implementation.title>
 		<implementation.vendor>akquinet engineering GmbH</implementation.vendor>
 		<vaadin.license.title>Apache License Version 2.0</vaadin.license.title>
 		<vaadin.addon>${project.artifactId}-${project.version}.jar</vaadin.addon>
 		<vaadin.widgetset>de.akquinet.engineering.vaadin.javascriptplus.JavaScriptPlusForVaadin</vaadin.widgetset>
-
 	</properties>
 
 	<dependencies>
@@ -53,16 +46,6 @@
 
 	<build>
 		<plugins>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.2</version>
-				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-				</configuration>
-			</plugin>
 
 			<plugin>
 				<groupId>com.vaadin</groupId>
