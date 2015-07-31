@@ -13,7 +13,7 @@
 
 	<fileSets>
 		<fileSet>
-			<directory>.</directory>
+			<directory>..</directory>
 			<includes>
 				<include>LICENSE</include>
 				<include>README.md</include>
