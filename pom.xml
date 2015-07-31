@@ -85,7 +85,7 @@
 				<executions>
 					<execution>
 						<id>gwt-unitCache</id>
-						<phase>package</phase>
+						<phase>prepare-package</phase>
 						<goals>
 							<goal>clean</goal>
 						</goals>
