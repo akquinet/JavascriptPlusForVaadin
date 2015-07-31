@@ -1,7 +1,7 @@
 /*
  * Vaangular (c) 2015 akquinet engineering GmbH
  */
-package de.akquinet.engineering.vaadinjavascriptplus.client;
+package de.akquinet.engineering.vaadin.javascriptplus.client;
 
 import com.vaadin.client.JavaScriptConnectorHelper;
 import com.vaadin.client.communication.HasJavaScriptConnectorHelper;
@@ -10,16 +10,16 @@ import com.vaadin.client.ui.JavaScriptWidget;
 import com.vaadin.shared.ui.Connect;
 import com.vaadin.shared.ui.JavaScriptComponentState;
 
-import de.akquinet.engineering.vaadinjavascriptplus.AbstractJavaScriptComponentPlus;
+import de.akquinet.engineering.vaadin.javascriptplus.AbstractJavaScriptPlusComponent;
 
-@Connect(AbstractJavaScriptComponentPlus.class)
-public final class JavaScriptComponentConnectorPlus extends
+@Connect(AbstractJavaScriptPlusComponent.class)
+public final class JavaScriptPlusComponentConnector extends
         AbstractComponentConnector implements HasJavaScriptConnectorHelper {
 
     
 	private static final long serialVersionUID = 1L;
 	
-	private final JavaScriptConnectorHelper helper = new JavaScriptConnectorHelperPlus(this);
+	private final JavaScriptConnectorHelper helper = new JavaScriptPlusConnectorHelper(this);
     
 	@Override
 	public JavaScriptWidget getWidget() {

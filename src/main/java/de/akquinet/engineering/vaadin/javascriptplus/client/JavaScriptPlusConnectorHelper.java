@@ -1,19 +1,19 @@
 /*
  * Vaangular (c) 2015 akquinet engineering GmbH
  */
-package de.akquinet.engineering.vaadinjavascriptplus.client;
+package de.akquinet.engineering.vaadin.javascriptplus.client;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.vaadin.client.JavaScriptConnectorHelper;
 
-final class JavaScriptConnectorHelperPlus extends JavaScriptConnectorHelper {
+final class JavaScriptPlusConnectorHelper extends JavaScriptConnectorHelper {
 	
-	public JavaScriptConnectorHelperPlus(JavaScriptComponentConnectorPlus connector) {
+	public JavaScriptPlusConnectorHelper(JavaScriptPlusComponentConnector connector) {
 		super(connector);
 		this.connector = connector;
 	}
 	
-	private JavaScriptComponentConnectorPlus connector;
+	private JavaScriptPlusComponentConnector connector;
 
 	@Override
     protected void showInitProblem(
@@ -33,10 +33,10 @@ final class JavaScriptConnectorHelperPlus extends JavaScriptConnectorHelper {
 				name, value, false);
 	}
 	
-	private static native void augmentConnectorWrapper(JavaScriptObject obj, JavaScriptConnectorHelperPlus h)
+	private static native void augmentConnectorWrapper(JavaScriptObject obj, JavaScriptPlusConnectorHelper h)
 	/*-{
 	    obj.setDeferredVariable=function(name, value) {
-	    	$entry(h.@de.akquinet.engineering.vaadinjavascriptplus.client.JavaScriptConnectorHelperPlus::setDeferredVariableImpl(*)).call(h, name, JSON.stringify(value));
+	    	$entry(h.@de.akquinet.engineering.vaadin.javascriptplus.client.JavaScriptPlusConnectorHelper::setDeferredVariableImpl(*)).call(h, name, JSON.stringify(value));
 	    };
 	}-*/;
 	

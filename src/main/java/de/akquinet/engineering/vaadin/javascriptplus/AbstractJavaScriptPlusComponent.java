@@ -1,7 +1,7 @@
 /*
  * Vaangular (c) 2015 akquinet engineering GmbH
  */
-package de.akquinet.engineering.vaadinjavascriptplus;
+package de.akquinet.engineering.vaadin.javascriptplus;
 
 import java.util.Map;
 
@@ -9,11 +9,11 @@ import com.vaadin.server.VariableOwner;
 import com.vaadin.ui.AbstractJavaScriptComponent;
 
 @SuppressWarnings("deprecation")
-public abstract class AbstractJavaScriptComponentPlus extends AbstractJavaScriptComponent implements VariableOwner {
+public abstract class AbstractJavaScriptPlusComponent extends AbstractJavaScriptComponent implements VariableOwner {
 
 	private static final long serialVersionUID = 1L;
 
-	public AbstractJavaScriptComponentPlus() {
+	public AbstractJavaScriptPlusComponent() {
 		super();
 	}
 	
