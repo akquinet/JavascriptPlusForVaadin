@@ -82,25 +82,25 @@
 			<plugin>
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>2.5</version>
-				<configuration>
-					<filesets>
-						<fileset>
-							<directory>${project.build.directory}/classes/VAADIN</directory>
-							<includes>
-								<directory>gwt-unitCache/**</directory>
-							</includes>
-							<followSymlinks>false</followSymlinks>
-						</fileset>
-					</filesets>
-					<excludeDefaultDirectories>true</excludeDefaultDirectories>
-				</configuration>
 				<executions>
 					<execution>
 						<id>gwt-unitCache</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>clean</goal>
 						</goals>
+						<configuration>
+							<filesets>
+								<fileset>
+									<directory>${project.build.directory}/classes/VAADIN</directory>
+									<includes>
+										<directory>gwt-unitCache/**</directory>
+									</includes>
+									<followSymlinks>false</followSymlinks>
+								</fileset>
+							</filesets>
+							<excludeDefaultDirectories>true</excludeDefaultDirectories>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
