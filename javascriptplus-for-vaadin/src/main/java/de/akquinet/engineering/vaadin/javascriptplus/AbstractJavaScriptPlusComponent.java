@@ -19,9 +19,10 @@ public abstract class AbstractJavaScriptPlusComponent extends AbstractJavaScript
 	
 	@Override
 	public void changeVariables(Object source, Map<String, Object> variables) {
-		onChangeVariables(source, variables);
+		onChangeVariables(variables);
 	}
 	
-	protected abstract void onChangeVariables(Object source, Map<String, Object> variables);
+	protected void onChangeVariables(Map<String, Object> variables) {
+	}
 
 }
