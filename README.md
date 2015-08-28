@@ -1,4 +1,5 @@
-Vaadin JavaScript Plus
-======================
+JavaScript Plus for vaadin
+==========================
 
-## What is Vaadin JavaScript Plus?
+## JavaScript Plus for vaadin?
+
