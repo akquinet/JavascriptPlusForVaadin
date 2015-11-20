@@ -22,7 +22,7 @@
 	<groupId>de.akquinet.engineering</groupId>
 	<artifactId>javascriptplus-for-vaadin-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.0</version>
 
 	<modules>
 		<module>javascriptplus-for-vaadin</module>
