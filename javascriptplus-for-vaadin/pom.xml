@@ -23,13 +23,13 @@
 	<parent>
 		<groupId>de.akquinet.engineering</groupId>
 		<artifactId>javascriptplus-for-vaadin-parent</artifactId>
-		<version>0.1.2-SNAPSHOT</version>
+		<version>0.1.2</version>
 	</parent> -->
 	
 	<artifactId>javascriptplus-for-vaadin</artifactId>
 	<!-- at least temporarily move properties / build instructions to sub-projects to make them independent -->
 	<groupId>de.akquinet.engineering</groupId>
-	<version>0.1.2-SNAPSHOT</version>
+	<version>0.1.2</version>
 
 	<properties>
 		<implementation.version>${project.version}</implementation.version>
