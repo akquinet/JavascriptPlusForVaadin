@@ -37,7 +37,7 @@
 		<!-- at least temporarily move properties / build instructions to sub-projects to make them independent -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<vaadin.version>7.6.1</vaadin.version>
+		<vaadin.version>7.7.3</vaadin.version>
 	</properties>
 
 	<dependencies>
